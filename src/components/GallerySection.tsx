@@ -1,6 +1,11 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
+import img1 from '../assets/generated/gallery-workshop-01.webp';
+import img2 from '../assets/generated/laboratorio-diesel.webp';
+import img3 from '../assets/generated/gallery-workshop-02.webp';
+import img4 from '../assets/generated/gallery-workshop-03.webp';
+
 export const GallerySection = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const galleryRef = useRef<HTMLDivElement>(null);
@@ -27,11 +32,6 @@ export const GallerySection = () => {
 
     return () => ctx.revert();
   }, []);
-
-import img1 from '../assets/generated/gallery-workshop-01.webp';
-import img2 from '../assets/generated/laboratorio-diesel.webp';
-import img3 from '../assets/generated/gallery-workshop-02.webp';
-import img4 from '../assets/generated/gallery-workshop-03.webp';
 
   const images = [img1, img2, img3, img4];
 
