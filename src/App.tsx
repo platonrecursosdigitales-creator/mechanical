@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useLenis } from "./hooks/useLenis";
-import { TopContactBar } from "./components/TopContactBar";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { QuickServiceCards } from "./components/QuickServiceCards";
