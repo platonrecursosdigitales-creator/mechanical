@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechanical Brokers | Diésel y Gasolina</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Roboto+Slab:wght@700;800;900&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'mb-navy': '#1D2240',
+            'mb-navy-dark': '#111426',
+            'mb-navy-soft': '#252B50',
+            'mb-red': '#E30E14',
+            'mb-red-dark': '#B90B10',
+            'mb-red-light': '#FF252B',
+            'mb-white': '#FFFFFF',
+            'mb-off-white': '#F5F5F2',
+            'mb-gray': '#D9D9D9',
+            'mb-muted': '#B8BBC9',
+          },
+          fontFamily: {
+            hero: ['"Graduate"', 'serif'],
+            heading: ['"Roboto Slab"', 'serif'],
+            body: ['"Barlow"', 'sans-serif'],
+            ui: ['"Barlow Condensed"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #1D2240;
+      color: #FFFFFF;
+      font-family: "Barlow", sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 { font-family: "Roboto Slab", serif; }
+    .hero-text { font-family: "Graduate", serif; }
+    .ui-text { font-family: "Barlow Condensed", sans-serif; }
+  </style>
+</head>
+<body class="bg-mb-navy-dark text-white font-body">
+
+  <!-- TOP BAR -->
+  <div class="bg-mb-navy-dark border-b border-white/5 py-2 hidden md:block z-50 relative">
+    <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center text-xs text-mb-muted">
+      <div class="flex items-center gap-6">
+        <span>Papalotla, Tlaxcala</span>
+        <span>brokersmechanical@gmail.com</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <span class="text-mb-red">• Rescate 24 hrs</span>
+        <span>Oficina 333 054 7806</span>
+        <span class="text-white font-medium">Cel 221 270 7082</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="w-full z-40 bg-mb-navy-dark/95 py-5 border-b border-white/10 sticky top-0">
+    <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+      <div class="font-hero text-2xl font-bold">MB</div>
+      <nav class="hidden lg:flex items-center gap-8 font-ui font-semibold tracking-wide text-sm">
+        <a href="#" class="hover:text-mb-red uppercase">Inicio</a>
+        <a href="#servicios" class="hover:text-mb-red uppercase">Servicios</a>
+        <a href="#flotillas" class="hover:text-mb-red uppercase">Flotillas</a>
+        <a href="#contacto" class="hover:text-mb-red uppercase">Contacto</a>
+        <a href="tel:2212707082" class="bg-mb-red hover:bg-mb-red-dark text-white px-6 py-2.5 rounded uppercase">Llamar ahora</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative min-h-screen flex items-center pt-20 bg-mb-navy-dark">
+    <div class="absolute inset-0 z-0 bg-mb-navy-dark/80">
+      <!-- Background placeholder -->
+    </div>
+    <div class="container mx-auto px-6 lg:px-12 relative z-20 max-w-3xl">
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-[2px] bg-mb-red"></div>
+        <span class="text-mb-red font-ui font-bold tracking-[0.2em] text-sm uppercase">SERVICIO ESPECIALIZADO EN DIÉSEL Y GASOLINA</span>
+      </div>
+      <h1 class="hero-text text-5xl md:text-7xl font-bold leading-tight mb-6 uppercase">
+        Mechanical Brokers<br>
+        <span class="text-mb-red">Diésel y Gasolina</span>
+      </h1>
+      <p class="text-xl text-mb-off-white font-medium mb-4 max-w-2xl font-body leading-relaxed">
+        Diagnóstico electrónico, mantenimiento preventivo, reparación mecánica y rescate carretero 24 hrs para unidades diésel y gasolina.
+      </p>
+      <p class="text-mb-muted mb-10 text-base">
+        Más de 20 años de experiencia atendiendo unidades comerciales, flotillas y servicios automotrices especializados.
+      </p>
+      <div class="flex gap-4 mb-16">
+        <a href="tel:2212707082" class="bg-mb-red hover:bg-mb-red-dark text-white px-8 py-4 font-ui text-lg uppercase">Llamar ahora</a>
+        <a href="https://wa.me/522212707082" class="border border-[#25D366] text-[#25D366] px-8 py-4 font-ui text-lg uppercase">Enviar WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK CARDS -->
+  <section class="relative z-30 -mt-24 pb-16 px-6 lg:px-12 container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="bg-mb-navy-soft border border-white/10 p-8 rounded-sm">
+        <h3 class="font-heading text-xl font-bold mb-3">Diagnóstico electrónico</h3>
+        <p class="text-mb-muted text-sm">Revisión técnica para detectar códigos de falla...</p>
+      </div>
+      <div class="bg-mb-navy-soft border border-white/10 p-8 rounded-sm">
+        <h3 class="font-heading text-xl font-bold mb-3">Rescate carretero 24 hrs</h3>
+        <p class="text-mb-muted text-sm">Soporte en ruta para unidades que requieren atención...</p>
+      </div>
+      <div class="bg-mb-navy-soft border border-white/10 p-8 rounded-sm">
+        <h3 class="font-heading text-xl font-bold mb-3">Mantenimiento de flotillas</h3>
+        <p class="text-mb-muted text-sm">Programación de servicios preventivos...</p>
+      </div>
+      <div class="bg-mb-navy-soft border border-white/10 p-8 rounded-sm">
+        <h3 class="font-heading text-xl font-bold mb-3">Servicio a domicilio</h3>
+        <p class="text-mb-muted text-sm">Atención técnica en ubicación del cliente...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="py-24 bg-mb-off-white text-mb-navy-dark">
+    <div class="container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-8 h-[2px] bg-mb-red"></div>
+          <span class="text-mb-red font-ui uppercase font-bold tracking-widest text-sm">QUIÉNES SOMOS</span>
+        </div>
+        <h2 class="text-4xl md:text-5xl font-heading font-bold mb-8">Más de 20 años de experiencia en servicio automotriz especializado</h2>
+        <p class="text-lg text-mb-navy/80 mb-4">Mechanical Brokers es una empresa del ramo automotriz especializada en sistemas de combustión interna...</p>
+        <div class="mt-8 p-6 bg-white border-l-4 border-mb-red shadow-sm">
+          <p class="font-heading font-bold text-xl italic text-mb-navy-dark">"El buen estado de una unidad no solo protege el vehículo; también protege la operación, al personal y a terceros."</p>
+        </div>
+      </div>
+      <div class="bg-gray-300 w-full aspect-square rounded-sm flex items-center justify-center text-gray-500">
+        [IMAGEN: diagnostic-electronico.webp]
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="py-24 bg-mb-navy-dark">
+    <div class="container mx-auto px-6 lg:px-12">
+      <div class="max-w-3xl mb-16">
+        <h2 class="text-4xl md:text-5xl font-heading font-bold mb-6">Servicios especializados para motores diésel y gasolina</h2>
+        <p class="text-xl text-mb-muted">Atención mecánica, electrónica y preventiva para unidades comerciales...</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Servicio 1 -->
+        <div class="bg-mb-navy border border-white/5 p-8">
+          <h3 class="text-xl font-heading font-bold mb-3">Taller mecánico especializado</h3>
+          <p class="text-mb-muted text-sm">Servicio para unidades con motores a diésel y gasolina...</p>
+        </div>
+        <!-- Servicio 2 -->
+        <div class="bg-mb-navy border border-white/5 p-8">
+          <h3 class="text-xl font-heading font-bold mb-3">Diagnóstico electrónico</h3>
+          <p class="text-mb-muted text-sm">Lectura, interpretación y revisión de parámetros...</p>
+        </div>
+        <!-- Servicio 3 -->
+        <div class="bg-mb-navy border border-white/5 p-8">
+          <h3 class="text-xl font-heading font-bold mb-3">Servicio a domicilio</h3>
+          <p class="text-mb-muted text-sm">Atención fuera del taller para unidades...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer class="bg-mb-navy-dark pt-16 pb-8 border-t border-white/10">
+    <div class="container mx-auto px-6 lg:px-12">
+      <p class="text-mb-muted text-sm mb-6">Mechanical Brokers brinda servicio mecánico, diagnóstico electrónico, mantenimiento preventivo...</p>
+      <p class="text-mb-red font-ui uppercase font-bold mb-8">Viaja Seguro</p>
+      <div class="text-sm text-mb-muted">© 2026 Mechanical Brokers. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+</body>
+</html>

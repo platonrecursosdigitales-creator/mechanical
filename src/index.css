@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Roboto+Slab:wght@700;800;900&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800&display=swap');
+@config "../tailwind.config.js";
+
+:root {
+  --mb-navy: #1D2240;
+  --mb-navy-dark: #111426;
+  --mb-navy-soft: #252B50;
+
+  --mb-red: #E30E14;
+  --mb-red-dark: #B90B10;
+  --mb-red-light: #FF252B;
+
+  --mb-white: #FFFFFF;
+  --mb-off-white: #F5F5F2;
+  --mb-gray: #D9D9D9;
+  --mb-muted: #B8BBC9;
+
+  --color-background: var(--mb-navy);
+  --color-background-dark: var(--mb-navy-dark);
+  --color-surface: var(--mb-navy-soft);
+
+  --color-primary: var(--mb-red);
+  --color-primary-hover: var(--mb-red-dark);
+
+  --color-text-main: var(--mb-white);
+  --color-text-muted: var(--mb-muted);
+  --color-border: rgba(255, 255, 255, 0.12);
+
+  --font-hero: "Graduate", serif;
+  --font-heading: "Roboto Slab", serif;
+  --font-body: "Barlow", sans-serif;
+  --font-ui: "Barlow Condensed", sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+.hero-text {
+  font-family: var(--font-hero);
+}
+
+.ui-text {
+  font-family: var(--font-ui);
+}
+
+/* Scrollbar styles for dark theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--mb-navy-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mb-navy-soft);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mb-red);
+}
+
+/* Selection */
+::selection {
+  background: var(--mb-red);
+  color: var(--mb-white);
+}
