@@ -4,9 +4,9 @@ import { Phone, Mail, MapPin } from "lucide-react";
 
 export const ContactSection = () => {
   return (
-    <section id="contacto" className="py-24 bg-white">
+    <section id="contacto" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex flex-col lg:flex-row gap-16">
+        <div className="flex flex-col lg:flex-row gap-10 md:gap-16">
           <div className="lg:w-1/2">
             <SectionEyebrow text={siteData.contactSection.eyebrow} />
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-mb-navy-dark">

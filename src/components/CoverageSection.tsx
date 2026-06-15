@@ -31,7 +31,7 @@ export const CoverageSection = () => {
   }, []);
 
   return (
-    <section id="cobertura" ref={sectionRef} className="py-24 bg-mb-off-white">
+    <section id="cobertura" ref={sectionRef} className="py-16 md:py-24 bg-mb-off-white">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-3xl mb-16 mx-auto text-center">
           <div className="flex justify-center mb-4">

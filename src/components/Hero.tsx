@@ -48,7 +48,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative min-h-[90vh] flex items-center pt-48 pb-24 overflow-hidden bg-mb-navy-dark">
+    <section ref={heroRef} className="relative min-h-[100svh] md:min-h-[90vh] flex items-center pt-36 md:pt-48 pb-16 md:pb-24 overflow-hidden bg-mb-navy-dark">
       {/* Background Layer with strict overlay and blur */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         {/* Background images slider */}
@@ -78,7 +78,7 @@ export const Hero = () => {
             </span>
           </div>
 
-          <h1 className="hero-text text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold leading-[1.1] text-white mb-6 uppercase tracking-tight drop-shadow-lg">
+          <h1 className="hero-text text-4xl sm:text-5xl md:text-7xl lg:text-[80px] font-bold leading-[1.1] text-white mb-4 md:mb-6 uppercase tracking-tight drop-shadow-lg">
             <div className="hero-title-line">
               <span>{siteData.hero.title}</span>
             </div>
@@ -95,7 +95,7 @@ export const Hero = () => {
             {siteData.hero.microcopy}
           </p>
 
-          <div className="hero-actions flex flex-col sm:flex-row gap-4 mb-12">
+          <div className="hero-actions flex flex-col sm:flex-row gap-3 md:gap-4 mb-10 md:mb-12">
             <a 
               href="tel:2212707082"
               className="bg-mb-red hover:bg-mb-red-dark text-white px-8 py-4 rounded-[14px] flex items-center justify-center gap-3 transition-colors font-ui text-lg tracking-wide uppercase shadow-lg shadow-mb-red/20"

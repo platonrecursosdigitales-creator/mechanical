@@ -37,7 +37,7 @@ export const GallerySection = () => {
 
 
   return (
-    <section ref={sectionRef} className="py-24 bg-mb-off-white">
+    <section ref={sectionRef} className="py-16 md:py-16 md:py-24 bg-mb-off-white">
       <div className="container mx-auto px-6 lg:px-12 mb-16 text-center">
         <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-mb-navy-dark">
           Trabajo real en unidades comerciales

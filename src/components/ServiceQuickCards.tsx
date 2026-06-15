@@ -49,7 +49,7 @@ export const ServiceQuickCards = () => {
   return (
     <section 
       ref={containerRef}
-      className="relative z-30 -mt-24 pb-16 px-6 lg:px-12 container mx-auto perspective-1000"
+      className="relative z-30 -mt-12 md:-mt-24 pb-16 px-6 lg:px-12 container mx-auto perspective-1000"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {siteData.quickCards.map((card, index) => {

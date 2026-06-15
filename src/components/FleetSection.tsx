@@ -36,9 +36,9 @@ export const FleetSection = () => {
   }, []);
 
   return (
-    <section id="flotillas" ref={sectionRef} className="py-24 bg-white text-mb-navy-dark overflow-hidden">
+    <section id="flotillas" ref={sectionRef} className="py-16 md:py-24 bg-white text-mb-navy-dark overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-16 items-center">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
           
           <div className="relative w-full rounded-[24px] overflow-hidden shadow-2xl group bg-mb-navy">
             {/* Dark overlay to protect against bad AI generated text */}

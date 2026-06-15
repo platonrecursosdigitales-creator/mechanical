@@ -31,9 +31,9 @@ export const DiagnosticsSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-mb-navy-dark relative overflow-hidden">
+    <section ref={sectionRef} className="py-16 md:py-24 bg-mb-navy-dark relative overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-16">
           
           <div className="lg:col-span-5">
             <div className="sticky top-32">

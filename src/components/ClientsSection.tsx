@@ -38,7 +38,7 @@ export const ClientsSection = () => {
   const duplicatedClients = [...siteData.clients.list, ...siteData.clients.list];
 
   return (
-    <section ref={sectionRef} className="py-24 bg-mb-navy border-y border-white/5 overflow-hidden">
+    <section ref={sectionRef} className="py-16 md:py-24 bg-mb-navy border-y border-white/5 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12 mb-12">
         <div className="max-w-3xl">
           <SectionEyebrow text={siteData.clients.eyebrow} />

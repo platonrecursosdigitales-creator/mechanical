@@ -31,9 +31,9 @@ export const AboutSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-mb-off-white text-mb-navy-dark overflow-hidden">
+    <section ref={sectionRef} className="py-16 md:py-24 bg-mb-off-white text-mb-navy-dark overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <div ref={textRef} className="max-w-2xl">
             <SectionEyebrow text={siteData.about.eyebrow} />
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-8 leading-tight text-mb-navy-dark">

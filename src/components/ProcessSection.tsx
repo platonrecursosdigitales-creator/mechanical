@@ -40,7 +40,7 @@ export const ProcessSection = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 bg-mb-navy relative overflow-hidden">
+    <section ref={sectionRef} className="py-16 md:py-24 bg-mb-navy relative overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-3xl mb-16">
           <SectionEyebrow text={siteData.process.eyebrow} />

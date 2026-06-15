@@ -37,9 +37,9 @@ export const FleetPreventiveSection = () => {
   }, []);
 
   return (
-    <section id="flotillas" ref={sectionRef} className="py-24 bg-white text-mb-navy-dark overflow-hidden">
+    <section id="flotillas" ref={sectionRef} className="py-16 md:py-24 bg-white text-mb-navy-dark overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-16 items-center">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
           <div className="relative w-full">
             <div className="absolute top-10 -left-10 w-full h-full bg-mb-red/10 -z-10" />
             <AnimatedImage 

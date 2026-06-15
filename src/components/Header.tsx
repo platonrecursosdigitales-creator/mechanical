@@ -30,8 +30,8 @@ export const Header = () => {
           scrolled ? "h-0 opacity-0 overflow-hidden" : "py-2.5 opacity-100"
         }`}
       >
-        <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center text-[11px] md:text-xs text-mb-off-white font-body">
-          <div className="flex items-center gap-4 md:gap-6">
+        <div className="container mx-auto px-4 lg:px-12 flex flex-col md:flex-row justify-between items-center text-[10px] md:text-[11px] lg:text-xs text-mb-off-white font-body gap-2 md:gap-0">
+          <div className="flex flex-wrap justify-center items-center gap-3 md:gap-6 w-full md:w-auto">
             <div className="flex items-center gap-1.5 hover:text-white transition-colors">
               <MapPin size={14} className="text-mb-red" />
               <span>{siteData.contact.locationShort}</span>

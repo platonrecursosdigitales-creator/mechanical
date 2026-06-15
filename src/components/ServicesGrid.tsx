@@ -31,7 +31,7 @@ export const ServicesGrid = () => {
   }, []);
 
   return (
-    <section id="servicios" ref={sectionRef} className="py-24 bg-mb-navy-dark relative overflow-hidden">
+    <section id="servicios" ref={sectionRef} className="py-16 md:py-24 bg-mb-navy-dark relative overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-3xl mb-16">
           <SectionEyebrow text={siteData.services.eyebrow} />

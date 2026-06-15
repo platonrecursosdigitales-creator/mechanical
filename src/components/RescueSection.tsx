@@ -34,7 +34,7 @@ export const RescueSection = () => {
     <section 
       id="rescate" 
       ref={sectionRef} 
-      className="relative py-32 flex items-center justify-center bg-mb-navy-dark overflow-hidden"
+      className="relative py-20 md:py-32 flex items-center justify-center bg-mb-navy-dark overflow-hidden"
     >
       {/* Background layer with strict opacity */}
       <div className="absolute inset-0 z-0">
