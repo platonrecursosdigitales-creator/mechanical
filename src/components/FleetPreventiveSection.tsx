@@ -4,6 +4,7 @@ import { siteData } from "../data/siteData";
 import { SectionEyebrow } from "./SectionEyebrow";
 import { AnimatedImage } from "./AnimatedImage";
 import { CheckCircle2 } from "lucide-react";
+import flotillasImg from "../assets/generated/flotillas-mantenimiento.webp";
 
 export const FleetPreventiveSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -42,7 +43,7 @@ export const FleetPreventiveSection = () => {
           <div className="relative w-full">
             <div className="absolute top-10 -left-10 w-full h-full bg-mb-red/10 -z-10" />
             <AnimatedImage 
-              src="/src/assets/generated/flotillas-mantenimiento.webp"
+              src={flotillasImg}
               alt="Mantenimiento de flotillas"
               className="w-full aspect-[4/3] object-cover shadow-xl"
             />

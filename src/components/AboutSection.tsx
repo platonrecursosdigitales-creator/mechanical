@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { siteData } from "../data/siteData";
 import { SectionEyebrow } from "./SectionEyebrow";
+import diagImg from "../assets/generated/diagnostic-electronico.webp";
 
 export const AboutSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -58,7 +59,7 @@ export const AboutSection = () => {
             {/* Using the generated diagnostic image but protecting it visually */}
             <div className="absolute inset-0 bg-mb-navy-dark/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
             <img 
-              src="/src/assets/generated/diagnostic-electronico.webp"
+              src={diagImg}
               alt="Mecánico especializado en diagnóstico electrónico"
               className="w-full aspect-[4/5] object-cover hover:scale-105 transition-transform duration-700"
               onError={(e) => {

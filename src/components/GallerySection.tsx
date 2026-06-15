@@ -28,12 +28,13 @@ export const GallerySection = () => {
     return () => ctx.revert();
   }, []);
 
-  const images = [
-    "/src/assets/generated/gallery-workshop-01.webp",
-    "/src/assets/generated/laboratorio-diesel.webp",
-    "/src/assets/generated/gallery-workshop-02.webp",
-    "/src/assets/generated/gallery-workshop-03.webp",
-  ];
+import img1 from '../assets/generated/gallery-workshop-01.webp';
+import img2 from '../assets/generated/laboratorio-diesel.webp';
+import img3 from '../assets/generated/gallery-workshop-02.webp';
+import img4 from '../assets/generated/gallery-workshop-03.webp';
+
+  const images = [img1, img2, img3, img4];
+
 
   return (
     <section ref={sectionRef} className="py-24 bg-mb-off-white">

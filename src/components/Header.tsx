@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { siteData } from "../data/siteData";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
+import logoImg from "../assets/logo/logo.png";
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -67,7 +68,7 @@ export const Header = () => {
           <div className="flex justify-between items-center">
             <a href="#" className="flex-shrink-0">
               <img
-                src="/src/assets/logo/logo.png"
+                src={logoImg}
                 alt="Mechanical Brokers Logo"
                 className={`w-auto object-contain transition-all duration-300 ${scrolled ? "max-w-[120px]" : "max-w-[150px]"}`}
               />

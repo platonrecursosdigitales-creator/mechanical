@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { siteData } from "../data/siteData";
 import { SectionEyebrow } from "./SectionEyebrow";
 import { CheckCircle2, Phone } from "lucide-react";
+import flotillasImg from "../assets/generated/flotillas-mantenimiento.webp";
 
 export const FleetSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -43,7 +44,7 @@ export const FleetSection = () => {
             {/* Dark overlay to protect against bad AI generated text */}
             <div className="absolute inset-0 bg-mb-navy-dark/10 group-hover:bg-transparent transition-colors duration-500 z-10" />
             <img 
-              src="/src/assets/generated/flotillas-mantenimiento.webp"
+              src={flotillasImg}
               alt="Mantenimiento preventivo para flotillas"
               className="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-700"
               onError={(e) => {

@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { siteData } from "../data/siteData";
 import { Phone, AlertTriangle } from "lucide-react";
+import rescueBg from "../assets/generated/rescate-carretero.webp";
 
 export const RescueSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -37,7 +38,10 @@ export const RescueSection = () => {
     >
       {/* Background layer with strict opacity */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('/src/assets/generated/rescate-carretero.webp')] bg-cover bg-center opacity-30" />
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-30" 
+          style={{ backgroundImage: `url(${rescueBg})` }} 
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-mb-navy-dark via-mb-navy-dark/95 to-mb-navy-dark/80" />
       </div>
 

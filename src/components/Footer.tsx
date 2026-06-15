@@ -1,5 +1,6 @@
 import { siteData } from "../data/siteData";
 import { Phone, Mail, MapPin } from "lucide-react";
+import logoImg from "../assets/logo/logo.png";
 
 export const Footer = () => {
   return (
@@ -9,7 +10,7 @@ export const Footer = () => {
           
           <div className="lg:col-span-1">
             <img 
-              src="/src/assets/logo/logo.png" 
+              src={logoImg} 
               alt="Mechanical Brokers" 
               className="w-auto h-auto object-contain max-w-[150px] mb-6" 
             />

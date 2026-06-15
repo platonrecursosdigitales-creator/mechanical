@@ -3,12 +3,12 @@ import gsap from "gsap";
 import { Phone, MessageCircle } from "lucide-react";
 import { siteData } from "../data/siteData";
 
-const bgImages = [
-  '/src/assets/generated/hero-mechanical-brokers.webp',
-  '/src/assets/generated/gallery-workshop-01.webp',
-  '/src/assets/generated/rescate-carretero.webp',
-  '/src/assets/generated/flotillas-mantenimiento.webp'
-];
+import heroBg1 from '../assets/generated/hero-mechanical-brokers.webp';
+import heroBg2 from '../assets/generated/gallery-workshop-01.webp';
+import heroBg3 from '../assets/generated/rescate-carretero.webp';
+import heroBg4 from '../assets/generated/flotillas-mantenimiento.webp';
+
+const bgImages = [heroBg1, heroBg2, heroBg3, heroBg4];
 
 export const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
